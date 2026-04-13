@@ -1,9 +1,9 @@
 :root {
-  --bg: #f6f1e8;
-  --text: #171411;
-  --muted: #6c655d;
-  --accent: #171411;
-  --line: rgba(23, 20, 17, 0.16);
+  --bg: #edf2f1;
+  --text: #172023;
+  --muted: #64767a;
+  --accent: #172023;
+  --line: rgba(23, 32, 35, 0.16);
 }
 
 * {
@@ -43,8 +43,9 @@ a:hover {
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(180deg, rgba(246, 241, 232, 0.72), rgba(246, 241, 232, 0.92)),
-    radial-gradient(circle at top, rgba(255, 255, 255, 0.35), transparent 32%);
+    linear-gradient(180deg, rgba(237, 242, 241, 0.46), rgba(237, 242, 241, 0.82)),
+    radial-gradient(circle at top, rgba(31, 92, 99, 0.22), transparent 34%),
+    radial-gradient(circle at 80% 18%, rgba(206, 220, 218, 0.2), transparent 30%);
 }
 
 .content {
