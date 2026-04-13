@@ -35,7 +35,7 @@ a:hover {
 .page-shell {
     position: relative;
     min-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .page-overlay {
@@ -54,7 +54,7 @@ a:hover {
     z-index: 1;
     width: min(1100px, calc(100vw - 80px));
     margin: 0 auto;
-    padding: 68px 0 56px;
+    padding: 55px 0 240px;
     text-align: left;
 }
 
@@ -244,9 +244,9 @@ a:hover {
 
 .grainient-background {
     position: fixed;
-    inset: 0;
+    inset: -3vh 0;
     width: 100vw;
-    height: 100vh;
+    height: 160vh;
     z-index: 0;
 }
 

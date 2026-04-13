@@ -39,8 +39,8 @@ export const sections: Section[] = [
       {
         name: "Affinity Map: Few-Shot Protein Family Classification via Prototypical Networks",
         meta: "Zenodo · 2026",
-        summary:
-          "A meta-learning paper on few-shot protein family classification and LoRA fine-tuning.",
+        // summary:
+        //   "A meta-learning paper on few-shot protein family classification and LoRA fine-tuning.",
         links: [
           {
             label: "Paper",
@@ -61,28 +61,28 @@ export const sections: Section[] = [
         name: "Georgia Institute of Technology",
         meta: "Atlanta, Georgia · Jan 2026 – Present",
         subtitle: "Machine Learning Researcher",
-        summary:
-          "Designing distributed  systems for GPU-parallel planning & learning-based decision making under partial observations.",
-      },
-      {
-        name: "Shopify",
-        meta: "Ottawa, Canada · Jan 2025 – Apr 2025",
-        subtitle: "Machine Learning Engineer Intern",
-        summary: "Built NLP, forecasting, and real-time inference systems.",
+        //summary:
+        // "Designing distributed  systems for GPU-parallel planning & learning-based decision making under partial observations.",
       },
       {
         name: "University of Ottawa",
         meta: "Ottawa, Canada · Sep 2024 – Dec 2024",
         subtitle: "Research Engineer Intern",
-        summary:
-          "Shipped  RL controller, data pipelines, and forecasting dashboards for energy systems with drift detection + monitoring.",
+        //summary:
+        // "Shipped  RL controller, data pipelines, and forecasting dashboards for energy systems with drift detection + monitoring.",
+      },
+      {
+        name: "Shopify",
+        meta: "Ottawa, Canada · Jan 2025 – Apr 2025",
+        subtitle: "Machine Learning Engineer Intern",
+        //summary: "Built NLP, forecasting, and real-time inference systems.",
       },
       {
         name: "March Networks",
         meta: "Ottawa, Canada · Jan 2023 – Apr 2023",
         subtitle: "Systems Engineer Intern",
-        summary:
-          "Developed C/C++, Python, and Node.js tooling to debug camera network failures and packet-loss.",
+        //summary:
+        // "Developed C/C++, Python, and Node.js tooling to debug camera network failures and packet-loss.",
       },
     ],
   },
@@ -122,8 +122,8 @@ export const sections: Section[] = [
         name: "UOBionics",
         subtitle: "Allonstride Exoskeleton · Embedded Developer",
         meta: "Jan 2024 – Dec 2024",
-        summary:
-          "Engineered C++ firmware on STM32 and FreeRTOS for motor and biosensor control.",
+        //summary:
+        // "Engineered C++ firmware on STM32 and FreeRTOS for motor and biosensor control.",
       },
     ],
   },
@@ -144,7 +144,7 @@ export const socialLinks = [
   },
   {
     label: "Resume",
-    href: "/resume.pdf",
+    href: "/pdf/resume.pdf",
     download: true,
   },
   {

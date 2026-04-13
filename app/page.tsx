@@ -27,7 +27,7 @@ export default function Home() {
         saturation={1}
         centerX={0}
         centerY={0}
-        zoom={0.9}
+        zoom={0.6}
         className="grainient-background"
       />
       <div className="page-overlay" />
@@ -35,7 +35,7 @@ export default function Home() {
         <header className="hero">
           <h1>Mohamed Deraz Nasr</h1>
           <div className="intro-copy">
-            ML engineer & researcher interested in embodied/physical AI,
+            ML researcher + engineer interested in embodied/physical AI,
             robotics, neural graphics, inference & distributed systems.
           </div>
         </header>
@@ -43,7 +43,7 @@ export default function Home() {
         {sections.map((section) => (
           <section key={section.title} className="section">
             <h2>{section.title}</h2>
-            <div className={section.title === "Education" ? "side-by-side" : ""}>
+            <div>
               {section.items.map((item) => (
                 <article key={item.name} className="entry">
                   <p className="entry-line">
@@ -64,15 +64,15 @@ export default function Home() {
                     <p className="entry-subtitle">
                       {item.subtitle ? <span>{item.subtitle}</span> : null}
                       {item.subtitle &&
-                      item.meta &&
-                      section.title !== "Experience" ? (
+                        item.meta &&
+                        section.title !== "Experience" ? (
                         <span className="inline-meta"> · {item.meta}</span>
                       ) : null}
                     </p>
                   ) : null}
                   {!item.subtitle &&
-                  item.meta &&
-                  section.title !== "Experience" ? (
+                    item.meta &&
+                    section.title !== "Experience" ? (
                     <p className="meta">{item.meta}</p>
                   ) : null}
                   {item.summary ? (
