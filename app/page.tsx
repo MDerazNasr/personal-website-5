@@ -1,28 +1,22 @@
 import { FooterLinks } from "@/components/footer-links";
-import { PixelBlast } from "@/components/pixel-blast";
+import { Waves } from "@/components/waves";
 import { sections, socialLinks } from "@/data/site";
 
 export default function Home() {
   return (
     <main className="page-shell">
-      <PixelBlast
-        variant="square"
-        pixelSize={2}
-        color="#1f5c63"
-        patternScale={8}
-        patternDensity={0.7}
-        pixelSizeJitter={1.8}
-        enableRipples
-        rippleSpeed={0.4}
-        rippleThickness={0.12}
-        rippleIntensityScale={1.5}
-        liquid={false}
-        liquidStrength={0.12}
-        liquidRadius={1.2}
-        liquidWobbleSpeed={5}
-        speed={1.9}
-        edgeFade={0.33}
-        transparent
+      <Waves
+        lineColor="#363535"
+        backgroundColor="rgba(255, 255, 255, 0.2)"
+        waveSpeedX={0.04}
+        waveSpeedY={0.01}
+        waveAmpX={40}
+        waveAmpY={20}
+        friction={0.9}
+        tension={0.01}
+        maxCursorMove={120}
+        xGap={12}
+        yGap={36}
       />
       <div className="page-overlay" />
       <div className="content">
