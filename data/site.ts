@@ -59,30 +59,30 @@ export const sections: Section[] = [
     items: [
       {
         name: "Georgia Institute of Technology",
-        meta: "Jan 2026 – Present",
-        subtitle: "Machine Learning Researcher · Atlanta, Georgia",
+        meta: "Atlanta, Georgia · Jan 2026 – Present",
+        subtitle: "Machine Learning Researcher",
         summary:
           "Designing distributed  systems for GPU-parallel planning & learning-based decision making under partial observations.",
       },
       {
         name: "Shopify",
-        meta: "Jan 2025 – Apr 2025",
-        subtitle: "Machine Learning Engineer Intern · Ottawa, Canada",
+        meta: "Ottawa, Canada · Jan 2025 – Apr 2025",
+        subtitle: "Machine Learning Engineer Intern",
         summary: "Built NLP, forecasting, and real-time inference systems.",
       },
       {
         name: "University of Ottawa",
-        meta: "Sep 2024 – Dec 2024",
-        subtitle: "Research Engineer Intern · Ottawa, Canada",
+        meta: "Ottawa, Canada · Sep 2024 – Dec 2024",
+        subtitle: "Research Engineer Intern",
         summary:
-          "Shipped reinforcement learning controller, data pipelines, and forecasting dashboards for energy systems with drift detection and continuous monitoring.",
+          "Shipped  RL controller, data pipelines, and forecasting dashboards for energy systems with drift detection + monitoring.",
       },
       {
         name: "March Networks",
-        meta: "Jan 2023 – Apr 2023",
-        subtitle: "Systems Engineer Intern · Ottawa, Canada",
+        meta: "Ottawa, Canada · Jan 2023 – Apr 2023",
+        subtitle: "Systems Engineer Intern",
         summary:
-          " - Developed C/C++, Python, and Node.js tooling to debug camera network failures and packet-loss.",
+          "Developed C/C++, Python, and Node.js tooling to debug camera network failures and packet-loss.",
       },
     ],
   },
@@ -99,7 +99,7 @@ export const sections: Section[] = [
         name: "FlowRT",
         href: "https://github.com/MDerazNasr/FlowRT",
         summary:
-          "A C++ & CUDA inference engine targeting magnitude latency gains for diffusion & vision models.",
+          "C++/CUDA inference engine for diffusion models targetting 10x speedup over PyTorch via INT8 quantization + persistent kernels.",
       },
       {
         name: "Protein Diffusion",

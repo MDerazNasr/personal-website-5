@@ -1,22 +1,34 @@
 import { FooterLinks } from "@/components/footer-links";
-import { Waves } from "@/components/waves";
+import Grainient from "@/components/grainient";
 import { sections, socialLinks } from "@/data/site";
 
 export default function Home() {
   return (
     <main className="page-shell">
-      <Waves
-        lineColor="#363535"
-        backgroundColor="rgba(255, 255, 255, 0.2)"
-        waveSpeedX={0.04}
-        waveSpeedY={0.01}
-        waveAmpX={40}
-        waveAmpY={20}
-        friction={0.9}
-        tension={0.01}
-        maxCursorMove={120}
-        xGap={12}
-        yGap={36}
+      <Grainient
+        color1="#5f535f"
+        color2="#5227FF"
+        color3="#B19EEF"
+        timeSpeed={0.55}
+        colorBalance={0}
+        warpStrength={1}
+        warpFrequency={5}
+        warpSpeed={2}
+        warpAmplitude={50}
+        blendAngle={0}
+        blendSoftness={0.05}
+        rotationAmount={500}
+        noiseScale={2}
+        grainAmount={0.1}
+        grainScale={2}
+        grainAnimated={false}
+        contrast={1.5}
+        gamma={1}
+        saturation={1}
+        centerX={0}
+        centerY={0}
+        zoom={0.9}
+        className="grainient-background"
       />
       <div className="page-overlay" />
       <div className="content">
@@ -31,7 +43,7 @@ export default function Home() {
         {sections.map((section) => (
           <section key={section.title} className="section">
             <h2>{section.title}</h2>
-            <div>
+            <div className={section.title === "Education" ? "side-by-side" : ""}>
               {section.items.map((item) => (
                 <article key={item.name} className="entry">
                   <p className="entry-line">
@@ -51,15 +63,23 @@ export default function Home() {
                   {item.subtitle || item.meta ? (
                     <p className="entry-subtitle">
                       {item.subtitle ? <span>{item.subtitle}</span> : null}
-                      {item.subtitle && item.meta && section.title !== "Experience" ? (
+                      {item.subtitle &&
+                      item.meta &&
+                      section.title !== "Experience" ? (
                         <span className="inline-meta"> · {item.meta}</span>
                       ) : null}
                     </p>
                   ) : null}
-                  {!item.subtitle && item.meta && section.title !== "Experience" ? (
+                  {!item.subtitle &&
+                  item.meta &&
+                  section.title !== "Experience" ? (
                     <p className="meta">{item.meta}</p>
                   ) : null}
-                  {item.summary ? <p className="entry-summary">{item.summary}</p> : null}
+                  {item.summary ? (
+                    <p className="entry-summary">
+                      <span className="bullet">·</span> {item.summary}
+                    </p>
+                  ) : null}
 
                   {item.links?.length ? (
                     <div className="inline-links">

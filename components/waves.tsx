@@ -358,6 +358,7 @@ export function Waves({
       context.clearRect(0, 0, boundsRef.current.width, boundsRef.current.height);
       context.beginPath();
       context.strokeStyle = configRef.current.lineColor;
+      context.lineWidth = 1.25;
 
       linesRef.current.forEach((points) => {
         let firstPoint = moved(points[0]!, false);
@@ -454,7 +455,7 @@ export function Waves({
       ref={containerRef}
       className={`waves ${className}`.trim()}
       style={{
-        position: "absolute",
+        position: "fixed",
         top: 0,
         left: 0,
         margin: 0,
@@ -463,6 +464,7 @@ export function Waves({
         height: "100%",
         overflow: "hidden",
         backgroundColor,
+        zIndex: 0,
         ...style
       }}
       aria-hidden="true"
