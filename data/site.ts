@@ -58,6 +58,12 @@ export const sections: Section[] = [
     title: "Experience",
     items: [
       {
+        name: "OpenVINO (Intel), Google Summer of Code",
+        meta: "Remote · May 2026 - Present",
+        subtitle: "Robotics Systems Engineeer",
+        //summary:
+      },
+      {
         name: "Georgia Institute of Technology",
         meta: "Atlanta, Georgia · Jan 2026 – Present",
         subtitle: "Machine Learning Researcher",
