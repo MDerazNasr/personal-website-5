@@ -58,22 +58,27 @@ export const sections: Section[] = [
     title: "Experience",
     items: [
       {
+        name: "Qualia",
+        meta: "Copenhagen, Denmark · Jun 2026 – Present",
+        subtitle: "Research Engineer Intern",
+      },
+      {
         name: "OpenVINO (Intel), Google Summer of Code",
         meta: "Remote · May 2026 - Present",
-        subtitle: "Robotics Systems Engineeer",
+        subtitle: "Machine Learning Systems Engineer",
         //summary:
       },
       {
         name: "Georgia Institute of Technology",
         meta: "Atlanta, Georgia · Jan 2026 – Present",
-        subtitle: "Machine Learning Researcher",
+        subtitle: "Graduate Researcher",
         //summary:
         // "Designing distributed  systems for GPU-parallel planning & learning-based decision making under partial observations.",
       },
       {
         name: "University of Ottawa",
         meta: "Ottawa, Canada · Sep 2024 – Dec 2024",
-        subtitle: "Research Engineer Intern",
+        subtitle: "Undergraduate Researcher",
         //summary:
         // "Shipped  RL controller, data pipelines, and forecasting dashboards for energy systems with drift detection + monitoring.",
       },
@@ -96,13 +101,19 @@ export const sections: Section[] = [
     title: "Projects",
     items: [
       {
-        name: "Equivariant Gaussian World Model",
-        href: "https://github.com/MDerazNasr/equivariant-gaussian-model-",
+        name: "3D Reconstruction Platform",
+        href: "https://github.com/MDerazNasr/Dream-nav",
         summary:
-          " An SE(3)-equivariant 3D Gaussian world model for scene understanding, dynamics, and robot manipulation.",
+          "Mapped video to navigable 3D Gaussian scenes: frame extraction, COLMAP camera-pose recovery, and confidence-aware geometry.",
       },
       {
-        name: "FlowRT",
+        name: "MotionWorld",
+        href: "https://github.com/MDerazNasr/Unreal-Engine-World-Model",
+        summary:
+          "A real-time model predictive controller evaluating 64 movement futures, achieving collision free navigation around moving obstacles.",
+      },
+      {
+        name: "Inference Engine",
         href: "https://github.com/MDerazNasr/FlowRT",
         summary:
           "C++/CUDA inference engine for diffusion models targetting 10x speedup over PyTorch via INT8 quantization + persistent kernels.",
@@ -126,7 +137,7 @@ export const sections: Section[] = [
     items: [
       {
         name: "UOBionics",
-        subtitle: "Allonstride Exoskeleton · Embedded Developer",
+        subtitle: "Allonstride Exoskeleton · Software Developer",
         meta: "Jan 2024 – Dec 2024",
         //summary:
         // "Engineered C++ firmware on STM32 and FreeRTOS for motor and biosensor control.",
