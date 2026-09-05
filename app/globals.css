@@ -12,6 +12,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 body {
@@ -78,7 +79,8 @@ a:hover {
 
 .hero h1 {
     margin: 0;
-    font-size: 0.95rem;
+    color: #c62828;
+    font-size: 1.15rem;
     font-weight: 600;
     letter-spacing: -0.01em;
     display: inline-block;
@@ -100,6 +102,30 @@ a:hover {
 
 .section {
     margin-top: 28px;
+}
+
+.section-pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 64px;
+    align-items: start;
+}
+
+.section-pair > .section {
+    align-self: start;
+    margin-top: 28px;
+}
+
+.section-pair > .section > h2 {
+    line-height: 1;
+}
+
+.experience-layout {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+}
+
+.section-stack .section + .section {
+    margin-top: 34px;
 }
 
 .section h2 {
@@ -161,9 +187,18 @@ a:hover {
     text-transform: uppercase;
 }
 
+.publication-link a {
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+}
+
 .entry-name {
     font-weight: 600;
     font-size: 0.95rem;
+}
+
+.section-publications .entry-name {
+    font-size: 0.85rem;
 }
 
 .hero h1:hover,
@@ -299,11 +334,26 @@ a:hover {
         width: min(100vw - 40px, 860px);
         padding: 36px 0 40px;
     }
+
+    .section-pair {
+        column-gap: 40px;
+    }
+}
+
+@media (max-width: 760px) {
+    .section-pair,
+    .experience-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .section-stack .section + .section {
+        margin-top: 28px;
+    }
 }
 
 @media (max-width: 560px) {
     .hero h1 {
-        font-size: 0.96rem;
+        font-size: 1.16rem;
     }
 
     .intro-copy,

@@ -1,5 +1,5 @@
 import { FooterLinks } from "@/components/footer-links";
-import Grainient from "@/components/grainient";
+// import Grainient from "@/components/grainient";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { sections, socialLinks } from "@/data/site";
 
@@ -13,7 +13,10 @@ export default function Home() {
   const renderSection = (section: any) => {
     if (!section) return null;
     return (
-      <section key={section.title} className="section">
+      <section
+        key={section.title}
+        className={`section section-${section.title.toLowerCase()}`}
+      >
         <h2>{section.title}</h2>
         <div>
           {section.items.map((item: any) => (
@@ -45,7 +48,19 @@ export default function Home() {
               {!item.subtitle &&
                 item.meta &&
                 section.title !== "Experience" ? (
-                <p className="meta">{item.meta}</p>
+                <p className="meta">
+                  {item.meta}
+                  {section.title === "Publications"
+                    ? item.links?.map((link: any) => (
+                        <span key={link.label} className="publication-link">
+                          {" · "}
+                          <a href={link.href} target="_blank" rel="noreferrer">
+                            {link.label}
+                          </a>
+                        </span>
+                      ))
+                    : null}
+                </p>
               ) : null}
               {item.summary ? (
                 <p className="entry-summary">
@@ -53,7 +68,7 @@ export default function Home() {
                 </p>
               ) : null}
 
-              {item.links?.length ? (
+              {item.links?.length && section.title !== "Publications" ? (
                 <div className="inline-links">
                   {item.links.map((link: any) => (
                     <a
@@ -76,7 +91,7 @@ export default function Home() {
 
   return (
     <main className="page-shell">
-      <Grainient
+      {/* <Grainient
         color1="#5f535f"
         color2="#5227FF"
         color3="#B19EEF"
@@ -100,7 +115,7 @@ export default function Home() {
         centerY={0}
         zoom={0.6}
         className="grainient-background"
-      />
+      /> */}
       <div className="page-overlay" />
       <div className="content">
         <header className="hero">
@@ -114,20 +129,20 @@ export default function Home() {
         </header>
 
         <ScrollReveal>
-          {renderSection(education)}
-          {renderSection(publications)}
+          <div className="section-pair">
+            {renderSection(education)}
+            {renderSection(publications)}
+          </div>
         </ScrollReveal>
 
         <ScrollReveal>
-          {renderSection(experience)}
-        </ScrollReveal>
-
-        <ScrollReveal>
-          {renderSection(projects)}
-        </ScrollReveal>
-
-        <ScrollReveal>
-          {renderSection(extracurriculars)}
+          <div className="section-pair experience-layout">
+            {renderSection(experience)}
+            <div className="section-stack">
+              {renderSection(projects)}
+              {renderSection(extracurriculars)}
+            </div>
+          </div>
         </ScrollReveal>
 
         <ScrollReveal>

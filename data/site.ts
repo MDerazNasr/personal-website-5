@@ -37,6 +37,18 @@ export const sections: Section[] = [
     title: "Publications",
     items: [
       {
+        name: "One Lens, Many Worlds : A Capability-Typed Interface for World-Model Interpretability",
+        meta: "arXiv · 2026",
+        // summary:
+        //   "Unified interpretability for cross-architecture analysis of RSSM, JEPA, and Transformer world models.",
+        links: [
+          {
+            label: "Paper",
+            href: "https://arxiv.org/abs/2606.09936",
+          },
+        ],
+      },
+      {
         name: "Affinity Map: Few-Shot Protein Family Classification via Prototypical Networks",
         meta: "Zenodo · 2026",
         // summary:
@@ -103,32 +115,32 @@ export const sections: Section[] = [
       {
         name: "3D Reconstruction Platform",
         href: "https://github.com/MDerazNasr/Dream-nav",
-        summary:
-          "Mapped video to navigable 3D Gaussian scenes: frame extraction, COLMAP camera-pose recovery, and confidence-aware geometry.",
+        // summary:
+        //   "Mapped video to navigable 3D Gaussian scenes: frame extraction, COLMAP camera-pose recovery, and confidence-aware geometry.",
       },
       {
-        name: "MotionWorld",
+        name: "Motion World Model",
         href: "https://github.com/MDerazNasr/Unreal-Engine-World-Model",
-        summary:
-          "A real-time model predictive controller evaluating 64 movement futures, achieving collision free navigation around moving obstacles.",
+        // summary:
+        //   "A real-time model predictive controller evaluating 64 movement futures, achieving collision free navigation around moving obstacles.",
       },
       {
         name: "Inference Engine",
         href: "https://github.com/MDerazNasr/FlowRT",
-        summary:
-          "C++/CUDA inference engine for diffusion models targetting 10x speedup over PyTorch via INT8 quantization + persistent kernels.",
+        // summary:
+        //   "C++/CUDA inference engine for diffusion models targetting 10x speedup over PyTorch via INT8 quantization + persistent kernels.",
       },
       {
-        name: "Protein Diffusion",
+        name: "3D Protein Diffusion Model",
         href: "https://github.com/MDerazNasr/Protein-Diffusion",
-        summary:
-          "A 3D protein backbone diffusion system using equivariant modeling and AlphaFold-based plausibility checks.",
+        // summary:
+        //   "A 3D protein backbone diffusion system using equivariant modeling and AlphaFold-based plausibility checks.",
       },
       {
-        name: "Reinforcement Learning F1 Sim",
+        name: "Reinforcement Learning F1 Simulator",
         href: "https://github.com/MDerazNasr/Race-Strategy-Simulator",
-        summary:
-          " A F1 strategy simulator trained with PPO & behavioral cloning that exceeds baseline performance.",
+        // summary:
+        //   " A F1 strategy simulator trained with PPO & behavioral cloning that exceeds baseline performance.",
       },
     ],
   },
