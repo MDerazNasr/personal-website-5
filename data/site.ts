@@ -37,7 +37,7 @@ export const sections: Section[] = [
     title: "Publications",
     items: [
       {
-        name: "One Lens, Many Worlds : A Capability-Typed Interface for World-Model Interpretability",
+        name: "One Lens, Many Worlds: A Capability-Typed Interface for World-Model Interpretability",
         meta: "arXiv · 2026",
         // summary:
         //   "Unified interpretability for cross-architecture analysis of RSSM, JEPA, and Transformer world models.",
