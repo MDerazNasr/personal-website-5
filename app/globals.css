@@ -265,6 +265,10 @@ a:hover {
     margin-top: 34px;
 }
 
+.hero-links .footer-links {
+    margin: 0 0 24px;
+}
+
 .footer-link-button,
 .footer-link-anchor {
     display: inline;

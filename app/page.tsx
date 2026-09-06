@@ -120,6 +120,9 @@ export default function Home() {
       <div className="content">
         <header className="hero">
           <ScrollReveal>
+            <div className="hero-links">
+              <FooterLinks links={socialLinks} />
+            </div>
             <h1>Mohamed Deraz Nasr</h1>
             <div className="intro-copy">
               ML researcher + engineer interested in embodied/physical AI,
@@ -136,17 +139,11 @@ export default function Home() {
         </ScrollReveal>
 
         <ScrollReveal>
-          <div className="section-pair experience-layout">
+          <div className="section-stack">
             {renderSection(experience)}
-            <div className="section-stack">
-              {renderSection(projects)}
-              {renderSection(extracurriculars)}
-            </div>
+            {renderSection(extracurriculars)}
+            {renderSection(projects)}
           </div>
-        </ScrollReveal>
-
-        <ScrollReveal>
-          <FooterLinks links={socialLinks} />
         </ScrollReveal>
       </div>
     </main>
